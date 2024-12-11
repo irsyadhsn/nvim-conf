@@ -8,8 +8,10 @@ return {
     lspconfig.ts_ls.setup({
       filetypes = {
         "javascript",
+        "javascriptreact",
         "javascript.jsx",
         "typescript",
+        "typescriptreact",
         "typescript.tsx",
       },
       cmd = {
