@@ -59,7 +59,7 @@ return {
 				trigger_debounce_time = 500,
 				throttle = 550,
 				fetching_timeout = 80,
-				max_view_entries = 30,
+--				max_view_entries = 30,
 			},
 
 			-- configure lspkind for vs-code like pictograms in completion menu
