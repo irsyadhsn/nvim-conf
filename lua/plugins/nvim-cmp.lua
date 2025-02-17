@@ -15,6 +15,7 @@ return {
 		"rafamadriz/friendly-snippets", -- useful snippets
 		"onsails/lspkind.nvim", -- vs-code like pictograms
 		"roobert/tailwindcss-colorizer-cmp.nvim",
+		"kristijanhusak/vim-dadbod-completion",
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -50,6 +51,7 @@ return {
 				{ name = "luasnip" }, -- snippets
 				{ name = "buffer" }, -- text within current buffer
 				{ name = "path" }, -- file system paths
+				{ name = "vim-dadbod-completion" },
 				priority = 10,
 				keyword_length = 6,
 				group_index = 1,
@@ -59,7 +61,7 @@ return {
 				trigger_debounce_time = 500,
 				throttle = 550,
 				fetching_timeout = 80,
---				max_view_entries = 30,
+				--				max_view_entries = 30,
 			},
 
 			-- configure lspkind for vs-code like pictograms in completion menu
@@ -68,7 +70,8 @@ return {
 					maxwidth = 50,
 					ellipsis_char = "...",
 					menu = {
-						tailwind = "tailwind css",
+						tailwind = "[tailwind]",
+						vim_dadbod_completion = "[db]",
 					},
 					preview = {
 						show = true,
